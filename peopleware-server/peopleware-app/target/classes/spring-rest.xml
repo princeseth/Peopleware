@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd
+		http://www.springframework.org/schema/tx
+		http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+	<context:component-scan base-package="com.maplesoft" />
+
+
+	<context:annotation-config />
+	
+	<mvc:annotation-driven
+		content-negotiation-manager="contentNegotiationManager" />
+	<tx:annotation-driven transaction-manager="transactionManager" />
+	
+	<bean
+		class="org.springframework.web.servlet.view.json.MappingJacksonJsonView">
+		<property name="contentType" value="text/plain" />
+	</bean>
+
+	<bean id="contentNegotiationManager"
+		class="org.springframework.web.accept.ContentNegotiationManagerFactoryBean">
+		<property name="favorPathExtension" value="true" />
+		<property name="ignoreAcceptHeader" value="false" />
+		<property name="defaultContentType" value="application/json" />
+		<property name="useJaf" value="false" />
+
+		<property name="mediaTypes">
+			<map>
+				<entry key="html" value="text/html" />
+				<entry key="json" value="application/json" />
+				<entry key="xml" value="application/xml" />
+			</map>
+		</property>
+	</bean>
+
+	<bean id="dataSourceProperties"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location" value="classpath:datasource.properties" />
+	</bean>
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="${db.driverclass}" />
+		<property name="url" value="${db.url}" />
+		<property name="username" value="${db.username}" />
+		<property name="password" value="${db.password}" />
+	</bean>
+
+	<bean class="org.springframework.orm.hibernate4.LocalSessionFactoryBean"
+		id="sessionFactory">
+		<property name="dataSource" ref="dataSource"></property>
+		<property name="annotatedClasses" ref="entityList"></property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+				<prop key="hibernate.current_session_context_class">thread</prop>
+
+				<!-- For singleton factory -->
+				<!-- <property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory</property> -->
+
+				<!-- enable second level cache and query cache -->
+				<!-- <prop key="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory 
+					<prop key="hibernate.cache.use_second_level_cache">true</prop> <prop key="hibernate.cache.use_query_cache">true</prop> 
+					<prop key="net.sf.ehcache.configurationResourceName">/webshop_ehcache.xml</prop> -->
+			</props>
+		</property>
+	</bean>
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<util:list id="entityList" value-type="java.lang.String">
+		<value>com.maplesoft.peopleware.beans.entity.Candidate</value>
+		<value>com.maplesoft.peopleware.beans.entity.Company</value>
+		<value>com.maplesoft.peopleware.beans.entity.JobOffer</value>
+		<value>com.maplesoft.peopleware.beans.entity.AcademicDegree</value>
+		<value>com.maplesoft.peopleware.beans.entity.TechnicalSkill</value>
+		<value>com.maplesoft.peopleware.beans.entity.CandidateTechnicalSkill</value>
+		<value>com.maplesoft.peopleware.beans.entity.JobOfferTechnicalSkill</value>
+	</util:list>
+
+</beans>

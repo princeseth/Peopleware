@@ -1,0 +1,18 @@
+﻿#salaryRange{
+border:0; 
+color:black; 
+font-weight:bold;	
+}
+#slider-range {
+    margin-top: 10px;
+	margin-left: 200px;
+}
+.ui-slider-horizontal {
+    height: 15px;
+    width: 750px;
+}
+.ui-slider .ui-slider-handle {
+    height: 20px;
+    width: 10px;
+    padding-left: 5px;
+}

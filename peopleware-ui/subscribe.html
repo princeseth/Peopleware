@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Job</title>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- css -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,700,800" rel="stylesheet" media="screen">
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="css/style.css" rel="stylesheet" media="screen">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-default" style="background-color: black" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+	  <h3 style="color:white">People-Ware</h3>
+      </div>
+      <div class="navigation collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+		<li><a class="anchorList" href="./applicantlist.html">Applicant List</a></li>
+          <li><a class="anchorList" href="./joblist.html">Job Offer List</a></li>
+		  <li><a class="anchorList" href="./joboffer.html">Post Job Offer</a></li>
+          <li class="current"><a class="anchorList" href="./subscribe.html">Subscription</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section id="subscription" class="home-section bg-white">
+    <div class="container">
+          <div class="section-heading">
+            <h4>Candidate Subscription</h4>
+           </div>
+         <form>
+            <div class="form-group row">
+              <label class="col-md-2 col-xs-2" for="firstName"> First Name</label>
+              <input type="textbox" class="col-md-8 col-xs-6" name="firstName" id="firstName" aria-describedby="emailHelp" placeholder="Enter First Name" required>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-2 col-xs-2" for="lastName">Last Name</label>
+              <input type="textbox" class="col-md-8 col-xs-6" name="lastName" id="lastName" aria-describedby="emailHelp" placeholder="Enter Last Name" required>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-2 col-xs-2" for="email">Email address</label>
+              <input type="email"  class="col-md-8 col-xs-6" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Enter Email Address" required>
+            </div>
+            <div class="form-group row">
+              <label for="contact" class="col-md-2 col-xs-2 col-form-label">Contact</label>
+              <input class="col-md-8 col-xs-6" type="tel" min="10" max="10" placeholder="1-(555)-555-5555" name="contact" id="contact" required>
+             
+            </div>
+     
+            <div class="form-group row" >
+            <label for="minimumSalary" class="col-md-2 col-xs-2 col-form-label">Minimum Salary</label>
+            <input class="col-md-8 col-xs-6" type="number" min="0" placeholder="1.00" name="minimumSalary" id="minimumSalary" required>
+          </div>
+            <div class="form-group row">
+              <label class="col-md-2 col-xs-2" for="workingTime">Work Time</label>
+              <select class="col-md-8 col-xs-6" class="form-control" name="workingTime" id="workingTime" required>
+                <option value="FULL_TIME">Full Time</option>
+                <option value="PART_TIME">Part Time</option>
+				<option value="BOTH">Both</option>
+              </select>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-2 col-xs-2" for="academicDegree">Academic Degree</label>
+              <select class="col-md-8 col-xs-6" class="form-control" name="academicDegree" id="academicDegree" required>              
+              </select>
+            </div>
+           <div class="form-group row">
+           
+			 <label class="col-md-2 col-xs-2" >Technical Skills</label>
+			<div class="form-group" id="rate">
+			</div>
+			</div>
+          <button type="submit" class="btn btn-lg btn-primary">Subscribe</button>
+        </form>
+         
+      
+    </div>
+  </section>
+<!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Copyright &copy; 2018 .</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  </body>
+  <!-- js -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/subscribe.js"></script>
+	
+     
+
+</html>

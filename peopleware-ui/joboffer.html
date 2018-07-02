@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Job Offer</title>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- css -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,700,800" rel="stylesheet" media="screen">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css" media="screen">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bar-rating/1.2.2/themes/fontawesome-stars.min.css" media="screen">
+  
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="css/style.css" rel="stylesheet" media="screen">
+  <link href="css/jobOffer.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-default" style="background-color: black" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+		<h3 style="color:white">People-Ware</h3>
+      </div>
+      <div class="navigation collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+			<li><a class="anchorList" href="./applicantlist.html">Applicant List</a></li>
+			<li><a class="anchorList" href="./joblist.html">Job Offer List</a></li>
+          <li class="current"><a class="anchorList" href="./joboffer.html">Post Job Offer</a></li>
+          <li><a class="anchorList" href="./subscribe.html">Subscription</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- intro area -->
+ <section id="jobOffer" class="home-section bg-white">
+      <div class="container">
+        <div class="section-heading">
+            <h4>Post Job Offers</h4>
+         </div>
+        <form>
+		
+			<div class="form-group row">
+              <label class="col-md-2 col-xs-2" for="name">Company Name</label>
+              <select class="col-md-8 col-xs-6" class="form-control" name="companyName" id="companyName" onchange="selectCompany(this.options[this.selectedIndex].value)" >              
+              </select>
+			 </div> 
+            <div class="form-group row">
+              <label class="col-md-2 col-xs-2" for="name">Job Name</label>
+              <input type="textbox" class="col-md-8 col-xs-6" name="jobName" id="jobName" aria-describedby="emailHelp" placeholder="Enter Name" required>
+            </div>
+             <div class="form-group row">
+              <label class="col-md-2 col-xs-2" for="description">Job Description</label>
+              <textarea class="col-md-8 col-xs-6" name="description" id="description" rows="6" required></textarea>
+            </div>
+             <div class="form-group row">
+            <label for="salaryRange" class="col-md-2 col-xs-2 col-form-label">Salary Range</label>
+        <!--    <input type="textbox" class="col-md-8 col-xs-6" name="salaryRange" id="salaryRange" > -->
+			<input type="text" name="salaryRange" id="salaryRange" readonly required>
+			<div id="slider-range"></div>
+			</div>
+            <div class="form-group row">
+              <label class="col-md-2 col-xs-2" for="worktime">Working Time</label>
+              <select class="col-xs-6 col-md-8" class="form-control" name="workingTime" id="workingTime" required>
+                <option value="FULL_TIME">Full Time</option>
+                <option value="PART_TIME">Part Time</option>
+              </select>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-2 col-xs-2" for="degree">Academic Degree</label>
+              <select class="col-md-8 col-xs-6" class="form-control" id="academicDegree" name="academicDegree" >               
+              </select>
+            </div>
+            <div class="form-group row">
+           
+			 <label class="col-md-2 col-xs-2" >Technical Skills</label>
+			<div class="form-group" id="rate">
+			</div>
+			</div>
+			
+
+          <button type="submit" class="btn btn-lg btn-primary">Add Job</button>
+        </form>
+         
+    </div>
+  </div>
+</section>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Copyright &copy; 2018 .</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- js -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/joboffer.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-bar-rating/1.2.2/jquery.barrating.min.js"></script>
+  
+  
+        
+</body>
+</html>

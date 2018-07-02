@@ -1,0 +1,127 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.maplesoft.pwr</groupId>
+	<artifactId>peopleware-app</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<name>Peopleware Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<jdk.source.version>1.7</jdk.source.version>
+		<jdk.target.version>1.7</jdk.target.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>com.maplesoft.pwr</groupId>
+			<artifactId>peopleware-core</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+	<profiles>
+		<profile>
+			<id>dev</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<build>
+				<resources>
+					<resource>
+						<directory>src/main/resources/config</directory>
+					</resource>
+					<resource>
+						<directory>src/main/resources/properties/dev</directory>
+					</resource>
+					<resource>
+						<directory>src/main/resources/sql</directory>
+					</resource>
+				</resources>
+			</build>
+		</profile>
+		<!-- <profile>
+			<id>prod</id>
+			<build>
+				<resources>
+					<resource>
+						<directory>src/main/resources/config</directory>
+					</resource>
+					<resource>
+						<directory>src/main/resources/properties/prod</directory>
+					</resource>
+				</resources>
+			</build>
+		</profile>
+		<profile>
+			<id>staging</id>
+			<build>
+				<resources>
+					<resource>
+						<directory>src/main/resources/config</directory>
+					</resource>
+					<resource>
+						<directory>src/main/resources/properties/staging</directory>
+					</resource>
+				</resources>
+			</build>
+		</profile>
+		<profile>
+			<id>uat</id>
+			<build>
+				<resources>
+					<resource>
+						<directory>src/main/resources/config</directory>
+					</resource>
+					<resource>
+						<directory>src/main/resources/properties/uat</directory>
+					</resource>
+				</resources>
+			</build>
+		</profile> -->
+	</profiles>
+	<build>
+		<finalName>peopleware-app</finalName>
+		<plugins>
+			<plugin>
+				<!--To support checkstyle goals. For example: "mvn checkstyle:checkstyle" -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-checkstyle-plugin</artifactId>
+				<configuration>
+					<!-- <configLocation>/home/greenhorn/NetBeansProjects/greenhorn-checkstyle.xml</configLocation> -->
+					<!-- The above conguration line works as well, but the below is prefered. -->
+					<consoleOutput>true</consoleOutput>
+					<configLocation>src/main/resources/config/checkstyle.xml</configLocation>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>check</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+		</plugins>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.1</version>
+					<configuration>
+						<fork>true</fork>
+						<meminitial>128m</meminitial>
+						<maxmem>512m</maxmem>
+						<source>${jdk.source.version}</source>
+						<target>${jdk.target.version}</target>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-checkstyle-plugin</artifactId>
+					<version>2.9.1</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>

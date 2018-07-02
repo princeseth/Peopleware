@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Job Offer</title>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- css -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,700,800" rel="stylesheet" media="screen">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css" media="screen">
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="css/style.css" rel="stylesheet" media="screen">
+  <link href="css/jobOffer.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-default" style="background-color: black" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+		<h3 style="color:white">People-Ware</h3>
+
+      </div>
+      <div class="navigation collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+			<li class="current"><a class="anchorList" href="./applicantlist.html">Applicant List</a></li>
+			<li><a class="anchorList" href="./joblist.html">Job Offer List</a></li>
+          <li><a class="anchorList" href="./joboffer.html">Post Job Offer</a></li>
+          <li><a class="anchorList" href="./subscribe.html">Subscription</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<section class="home-section bg-white">
+    <div class="container">
+          <div class="section-heading">
+            <h4>List of all Applicants</h4>
+           </div>
+         <table class="table table-bordered" id="tabCallidus" style="font-size:12px;margin-top: 10px">
+         <thead>
+      <tr>
+        <th>Name</th>
+        <th>Academic Degree</th>
+        <th>Salary</th> 
+		<th>Working Time</th>
+		<th>Email</th>
+		<th>Skills</th>		
+		<th>Contact</th>
+      </tr>
+    </thead>
+    <tbody id = 'applicantList'>
+		
+	   </tbody>
+  </table>
+      
+    </div>
+  </section>
+  
+  
+  <div id="jobmodal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Job offers</h4>
+      </div>
+      <div class="modal-body">
+       <div class="container-fluid">
+          <div class="section-heading">
+            <h4>List of all Job Offers</h4>
+           </div>
+         <table class="table table-bordered" id="tabCallidus" style="font-size:12px;margin-top: 10px">
+         <thead>
+      <tr>
+        <th>Company</th>
+        <th>Job</th>
+        <th>Description</th>
+        <th>Salary Range</th> 
+		<th>Working Time</th>
+		<th>Skills</th>		
+		<th>Academic Degree</th>	
+      </tr>
+    </thead>
+    <tbody id = 'jobofferlist'>	
+	   </tbody>
+  </table>
+      
+    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Copyright &copy; 2018 .</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  </body>
+  <!-- js -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/applicant.js"></script>

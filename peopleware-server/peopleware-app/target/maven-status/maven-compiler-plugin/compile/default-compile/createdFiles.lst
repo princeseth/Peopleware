@@ -1,0 +1,5 @@
+com\maplesoft\peopleware\service\impl\PeoplewareServiceImpl.class
+com\maplesoft\peopleware\controllers\PeoplewareController.class
+com\maplesoft\peopleware\dao\PeoplewareDAO.class
+com\maplesoft\peopleware\service\PeoplewareService.class
+com\maplesoft\peopleware\dao\impl\PeoplewareDAOImpl.class

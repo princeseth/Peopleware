@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.5">
+<file name="E:\MapleSoft\GitHub - Copy\Agent\peopleware-server\peopleware-core\src\main\java\com\maplesoft\peopleware\beans\dto\AcademicDegreeDTO.java">
+</file>
+<file name="E:\MapleSoft\GitHub - Copy\Agent\peopleware-server\peopleware-core\src\main\java\com\maplesoft\peopleware\beans\dto\AcademicDegreeWrapper.java">
+</file>
+<file name="E:\MapleSoft\GitHub - Copy\Agent\peopleware-server\peopleware-core\src\main\java\com\maplesoft\peopleware\beans\dto\BaseDTO.java">
+</file>
+<file name="E:\MapleSoft\GitHub - Copy\Agent\peopleware-server\peopleware-core\src\main\java\com\maplesoft\peopleware\beans\dto\CandidateDTO.java">
+</file>
+<file name="E:\MapleSoft\GitHub - Copy\Agent\peopleware-server\peopleware-core\src\main\java\com\maplesoft\peopleware\beans\dto\CandidateTechnicalSkillDTO.java">
+</file>
+<file name="E:\MapleSoft\GitHub - Copy\Agent\peopleware-server\peopleware-core\src\main\java\com\maplesoft\peopleware\beans\dto\CandidateWrapper.java">
+</file>
+<file name="E:\MapleSoft\GitHub - Copy\Agent\peopleware-server\peopleware-core\src\main\java\com\maplesoft\peopleware\beans\dto\CompanyDTO.java">
+</file>
+<file name="E:\MapleSoft\GitHub - Copy\Agent\peopleware-server\peopleware-core\src\main\java\com\maplesoft\peopleware\beans\dto\CompanyWrapper.java">
+</file>
+<file name="E:\MapleSoft\GitHub - Copy\Agent\peopleware-server\peopleware-core\src\main\java\com\maplesoft\peopleware\beans\dto\JobOfferDTO.java">
+</file>
+<file name="E:\MapleSoft\GitHub - Copy\Agent\peopleware-server\peopleware-core\src\main\java\com\maplesoft\peopleware\beans\dto\JobOfferTechnicalSkillDTO.java">
+</file>
+<file name="E:\MapleSoft\GitHub - Copy\Agent\peopleware-server\peopleware-core\src\main\java\com\maplesoft\peopleware\beans\dto\JobOfferWrapper.java">
+</file>
+<file name="E:\MapleSoft\GitHub - Copy\Agent\peopleware-server\peopleware-core\src\main\java\com\maplesoft\peopleware\beans\dto\TechnicalSkillDTO.java">
+</file>
+<file name="E:\MapleSoft\GitHub - Copy\Agent\peopleware-server\peopleware-core\src\main\java\com\maplesoft\peopleware\beans\dto\TechnicalSkillWrapper.java">
+</file>
+<file name="E:\MapleSoft\GitHub - Copy\Agent\peopleware-server\peopleware-core\src\main\java\com\maplesoft\peopleware\beans\entity\AcademicDegree.java">
+</file>
+<file name="E:\MapleSoft\GitHub - Copy\Agent\peopleware-server\peopleware-core\src\main\java\com\maplesoft\peopleware\beans\entity\Candidate.java">
+</file>
+<file name="E:\MapleSoft\GitHub - Copy\Agent\peopleware-server\peopleware-core\src\main\java\com\maplesoft\peopleware\beans\entity\CandidateTechnicalSkill.java">
+</file>
+<file name="E:\MapleSoft\GitHub - Copy\Agent\peopleware-server\peopleware-core\src\main\java\com\maplesoft\peopleware\beans\entity\Company.java">
+</file>
+<file name="E:\MapleSoft\GitHub - Copy\Agent\peopleware-server\peopleware-core\src\main\java\com\maplesoft\peopleware\beans\entity\JobOffer.java">
+</file>
+<file name="E:\MapleSoft\GitHub - Copy\Agent\peopleware-server\peopleware-core\src\main\java\com\maplesoft\peopleware\beans\entity\JobOfferTechnicalSkill.java">
+</file>
+<file name="E:\MapleSoft\GitHub - Copy\Agent\peopleware-server\peopleware-core\src\main\java\com\maplesoft\peopleware\beans\entity\TechnicalSkill.java">
+</file>
+<file name="E:\MapleSoft\GitHub - Copy\Agent\peopleware-server\peopleware-core\src\main\java\com\maplesoft\peopleware\exception\DuplicateRecordFoundException.java">
+</file>
+<file name="E:\MapleSoft\GitHub - Copy\Agent\peopleware-server\peopleware-core\src\main\java\com\maplesoft\peopleware\exception\NoRecordFoundException.java">
+</file>
+<file name="E:\MapleSoft\GitHub - Copy\Agent\peopleware-server\peopleware-core\src\main\java\com\maplesoft\peopleware\response\BaseResponse.java">
+</file>
+<file name="E:\MapleSoft\GitHub - Copy\Agent\peopleware-server\peopleware-core\src\main\java\com\maplesoft\peopleware\util\PeoplewareConstants.java">
+</file>
+<file name="E:\MapleSoft\GitHub - Copy\Agent\peopleware-server\peopleware-core\src\main\java\com\maplesoft\peopleware\util\SortMap.java">
+</file>
+</checkstyle>
