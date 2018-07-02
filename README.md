@@ -44,5 +44,14 @@ Pages as follow:
 6. When server is up and running successfully, please hit the ## url :  pathtomachine:portnumber/peopleware-ui/subscribe.html as starting page of WebApp.
     ### For example: http://localhost:8080/peopleware-ui/subscribe.html
 
+### Test
+1. Open /peopleware-app/src/main/resources/properties/dev/datasource.properties to change the database url, username and password.
+2. Copy the peopleware-app.war into webapps directory of apache-tomcat (server).
+3. Copy the peopleware-ui into the webapps directory of apache-tomcat. It is a frontend of the Peopleware-WebApp
+4. When server is up and running successfully, please hit the ## url :  pathtomachine:portnumber/peopleware-ui/subscribe.html as starting page of WebApp.
+    ### For example: http://localhost:8080/peopleware-ui/subscribe.html
+    
+    
+
 
 
