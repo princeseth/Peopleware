@@ -38,11 +38,11 @@ Pages as follow:
 1. Import peopleware-server (peopleware-app+peopleware-core) as maven project into an IDE.
 2. Open /peopleware-app/src/main/resources/properties/dev/datasource.properties to change the database url, username and password.
 3. Run peopleware-server as Maven install (this will build peopleware-core.jar and peopleware-app.war files)
-    ## Note :  Creation of peopleware-app.war file is dependant on peopleware-core.jar, therefore for war to be created peopleware-core.jar should be present.
+    ### Note :  Creation of peopleware-app.war file is dependant on peopleware-core.jar, therefore for war to be created peopleware-core.jar should be present.
 4. Copy the peopleware-app.war into webapps directory of apache-tomcat (server).
 5. Copy the peopleware-ui into the webapps directory of apache-tomcat. It is a frontend of the Peopleware-WebApp
 6. When server is up and running successfully, please hit the ## url :  pathtomachine:portnumber/peopleware-ui/subscribe.html as starting page of WebApp.
-    ## For example: http://localhost:8080/peopleware-ui/subscribe.html
+    ### For example: http://localhost:8080/peopleware-ui/subscribe.html
 
 
 
