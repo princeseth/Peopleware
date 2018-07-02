@@ -42,18 +42,20 @@ Pages as follow:
     ### Note :  Creation of peopleware-app.war file is dependant on peopleware-core.jar, therefore for war to be created peopleware-core.jar should be present.
 4. Copy the peopleware-app.war into webapps directory of apache-tomcat (server).
 5. Copy the peopleware-ui into the webapps directory of apache-tomcat. It is a frontend of the Peopleware-WebApp
-6. When server is up and running successfully, please hit the ## url :  pathtomachine:portnumber/peopleware-app/api/ after that JPA wil create tables in DB.
-7. Execute peopleware.sql to populate the prefilled data into DB.
-8. Load the start page into the web browser as  below example
+6. Create a Database of name which has been given in datasource.properties in step 2.
+7. When server is up and running successfully, please hit the ## url :  pathtomachine:portnumber/peopleware-app/api/ after that JPA wil create tables in selected database.
+8 Execute peopleware.sql to populate the prefilled data into DB.
+9. Load the start page into the web browser as  below example
     ### For example: http://localhost:8080/peopleware-ui/subscribe.html
 
 ### Test
 1. Open /peopleware-app/src/main/resources/properties/dev/datasource.properties to change the database url, username and password.
 2. Copy the peopleware-app.war into webapps directory of apache-tomcat (server).
 3. Copy the peopleware-ui into the webapps directory of apache-tomcat. It is a frontend of the Peopleware-WebApp.
-4. When server is up and running successfully, please hit the ## url :  pathtomachine:portnumber/peopleware-app/api/ after that JPA wil create tables in DB.
-5. Execute peopleware.sql to populate the prefilled data into DB.
-6. Load the start page into the web browser as  below example
+4. Create a Database of name which has been given in datasource.properties in step 2.
+5. When server is up and running successfully, please hit the ## url :  pathtomachine:portnumber/peopleware-app/api/ after that JPA wil create tables in selected database.
+6. Execute peopleware.sql to populate the prefilled data into DB.
+7. Load the start page into the web browser as  below example
     ### For example: http://localhost:8080/peopleware-ui/subscribe.html
     
     
