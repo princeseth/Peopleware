@@ -1,8 +1,8 @@
 # Peopleware
 
-# Tools Used
+## Tools Used
 
-# Project description
+## Project description
 
 
 # Steps to Setup the Project
