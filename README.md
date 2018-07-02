@@ -11,8 +11,10 @@
   
 A peopleware-server contains two projects peopleware-app and peopleware-core
 
-### peopleware-core - It includes all Entity and DTO classes seperate from business layer.
-### peopleware-app - It includes the buisness logic (ServiceLayer), Persistence Layer (DAO classes) and Application Controller.
+### peopleware-core -  
+It includes all Entity and DTO classes seperate from business layer.
+### peopleware-app - 
+It includes the buisness logic (ServiceLayer), Persistence Layer (DAO classes) and Application Controller.
   
 ## Project description
 
