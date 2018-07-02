@@ -15,7 +15,8 @@ A peopleware-server contains two projects peopleware-app and peopleware-core
 It includes all Entity and DTO classes seperate from business layer.
 ### peopleware-app - 
 It includes the buisness logic (ServiceLayer), Persistence Layer (DAO classes) and Application Controller.
-  
+### peopleware-ui -
+Web pages to render data to user.
 ## Project description
 
 People-Ware web app is a common platform for Employer as well as for Employees looking for an opportunity, it includes Registeration page which will allow a candidate to register as job seeker in an application. During registeration candidate has to provide required details such as Name, Contact#, Technical Skills (with their rating), salary expectations. On the other side, the Employer can post a job offer by adding job description, salary range, and require technical skills.
